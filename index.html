@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paróquia Santo Antônio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Paróquia Santo Antônio</h1>
+    <h3>Página inicial</h3>
+    <br>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre-nos.html">Sobre nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="endereco.html">Endereço</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="galeria">
+      <img src="img/igrejaStoAntonio.jpg" alt="Imagem 1" onclick="abrirModal(this)">
+      <img src="img/stoAntonio.jpg" alt="Imagem 2" onclick="abrirModal(this)">
+      <img src="img/stoAntonio2.png" alt="Imagem 3" onclick="abrirModal(this)">
+      <img src="img/stoAntonio3.jpg" alt="Imagem 4" onclick="abrirModal(this)">
+    </section>
+
+    <section class="biografia">
+      <h2>Biografia de Santo Antônio</h2>
+      <p>
+        Santo António de Lisboa ou de Pádua (1195?–1231) foi um importante teólogo, orador e taumaturgo da Igreja Católica. Inicialmente chamado Fernando, ingressou na Ordem dos Frades Menores em 1220 e viajou por Portugal, Itália e França, onde pregou e ensinou.
+      </p>
+    
+      <p id="maisTexto" style="display:none;">
+        Conhecido por sua cultura teológica e eloquência, foi nomeado mestre em Bolonha e participou do Capítulo Geral da Ordem em Assis. Faleceu em Pádua, onde é venerado como padroeiro.<br><br>
+        Canonizado poucos meses após sua morte, é considerado um dos santos mais importantes do Catolicismo, padroeiro de Lisboa, Pádua e outras cidades.
+      </p>
+    
+      <button onclick="toggleLeiaMais()" id="botaoLeiaMais">Leia mais</button>
+    </section>
+      
+    <div id="modal" class="modal" onclick="fecharModal()">
+      <span class="fechar">&times;</span>
+      <img class="modal-conteudo" id="imgModal">
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Paróquia Santo Antônio de Brás de Pina - Rio de Janeiro</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  
+  <div class="nota-rodape">
+    Imagens e texto retirados do google.com
+  </div>
+  
+</body>
+</html>
